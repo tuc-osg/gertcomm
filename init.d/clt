@@ -1,0 +1,23 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          clt
+# Should-Start:      
+# Required-Start:    lightdm
+# Required-Stop:     
+# Default-Start:     5
+# Default-Stop:     
+# Short-Description: CLT Showcase of the OSG group
+# Description:       Still a showcase for the Chemnitzer Linux Tage 2016
+### END INIT INFO
+#
+# Author:       Stefan Naumann <naums@hrz.tu-chemnitz.de>
+#
+
+# example for starting the receiver
+case "$1" in
+	start)
+		/opt/clt/recv &
+	;;
+esac
+exit 0;
+
